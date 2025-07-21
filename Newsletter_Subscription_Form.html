@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Newsletter Subscription Form</title>
+</head>
+<body>
+
+  <h2>Subscribe to Our Newsletter</h2>
+
+  <form action="/subscribe" method="post">
+    
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+    
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Create a password" required><br><br>
+
+    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>
+
+    
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="10" max="120"><br><br>
+
+    
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br><br>
+
+    
+    <label>Topics of Interest:</label><br>
+    <input type="checkbox" id="tech" name="interest" value="tech">
+    <label for="tech">Technology</label>
+    <input type="checkbox" id="health" name="interest" value="health">
+    <label for="health">Health</label>
+    <input type="checkbox" id="travel" name="interest" value="travel">
+    <label for="travel">Travel</label><br><br>
+
+    
+    <label for="profilePic">Upload Profile Picture:</label><br>
+    <input type="file" id="profilePic" name="profilePic"><br><br>
+
+    
+    <label for="message">Comments or Suggestions:</label><br>
+    <textarea id="message" name="message" placeholder="Your feedback here..." rows="4" cols="40"></textarea><br><br>
+
+    
+    <label for="frequency">How often do you want to receive emails?</label><br>
+    <select id="frequency" name="frequency" required>
+      <option value="">--Choose an option--</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select><br><br>
+
+    
+    <label for="newsletter">Newsletter Type:</label><br>
+    <input type="text" id="newsletter" name="newsletter" value="Get Updates through Email" readonly><br><br>
+
+    
+    <label for="satisfaction">How satisfied are you with our site?</label><br>
+    <input type="range" id="satisfaction" name="satisfaction" min="0" max="10"><br><br>
+
+
+    
+    <button type="submit">Subscribe</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('Just a button!')">Click Me</button>
+
+  </form>
+
+</body>
+</html>
